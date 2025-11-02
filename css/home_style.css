@@ -14,7 +14,7 @@
         margin: 10px;
         width: 168px;
         height: auto;
-
+        transition: all 0.2s ease;
     }
 
     .profile-menu-container{
@@ -31,22 +31,339 @@
     .profile-pic{
         width: 52px;
         height: auto;
+        transition: all 0.2s ease;
     }
 
     .menu-link{
         width: 30px;
         height: auto;
+        transition: all 0.2s ease;
+    }
+
+    .menu-link:hover, .profile-pic:hover, .logo-home-link-img:hover{
+        filter: brightness(110%);
+    }
+    .menu-link:active, .profile-pic:active, .logo-home-link-img:active{
+        filter: brightness(90%);
+    }
+
+
+    .searchbar-and-greeting-container{
+        position: relative;
+        padding-left: 12px;
+        padding-right: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+    }
+
+    .greeting-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .hello-text-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .hello-text{
+        position: relative;
+        color: #5C0002;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+
+    .user-name{
+        position: relative;
+        color: #5C0002;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+
+    .question-text{
+        position: relative;
+        color: #5C0002;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+
+    .searchbar-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #FFDDDD;
+        border-radius: 8px;
+
+    }
+
+    .searchbar-input{
+        width: 85%;
+        position: relative;
+        padding: 10px 16px;
+        background: transparent;
+        border-radius: 8px;
+        border: 0px solid transparent;
+        color: #5C0002;
+        font-size: 15px;
+        font-weight: 500;
+
+    }
+
+    .search-btn{
+        position: relative;
+        margin-left: auto;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        background: transparent;
+        border: 0px solid transparent;
+    }
+
+    .search-btn-icon{
+        position: relative;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .action-buttons-container{
+        position: relative;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 44px 68px;
+        margin-bottom: 400px;
+    }
+
+    .action-button-link{
+        text-decoration: none;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .action-button-link:hover{
+        filter: brightness(110%);
+    }
+
+    .action-button-link:active{
+        filter: brightness(90%);
+    }
+
+    .action-button-container-text{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .action-button-container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        background: #FFDDDD;
+        border-radius: 10px;
+        padding: 20px;
+
+
+    }
+
+    .button-text{
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+
+    .recent-recipe-container{
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        border-top-left-radius: 44px;
+        border-top-right-radius: 44px;
+        background-image: url(../img/background-red-elements.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        padding: 16px 27px 38px 30px;
+
+    }
+
+    .top-element-decor{
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        width: 35%;
+        height: 6px;
+        background: #FFDDDD;
+        border-radius: 34px;
+    }
+
+    .recent-dish-text{
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 14px;
+        color: #FFDDDD;
+        font-size: 20px;
+        font-weight: 700;
+
+    }
+
+    .photo-name-btn-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .recent-dish-image{
+        position: relative;
+        width: 152px;
+        height: 152px;
+        border-radius: 6px;
+    }
+    
+
+    .dish-name-view-btn-container{
+        position: relative;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-left: auto;
+
+    }
+
+    .dish-name{
+        position: relative;
+        margin: 0 auto;
+        width: 142px;
+        text-align: center;
+        color: #FFDDDD;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+
+    .view-btn{
+        position: relative;
+        background: #FFDDDD;
+        border: 0px solid transparent;
+        border-radius: 8px;
+        padding: 13px 48px;
+        color: #B70004;
+        font-size: 18px;
+        font-weight: 700;
+        transition: all 0.2s ease;
+    }
+
+    .view-btn:hover{
+        filter: brightness(110%);
+    }
+
+    .view-btn:active{
+        filter: brightness(90%);
+    }
+
+}
+
+@media (min-width: 576px){
+
+    .searchbar-container{
+       width: 85%;
+    }
+
+    .searchbar-input{
+        width: 90%;
+    }
+
+    .action-buttons-container{
+        margin-top: 50px;
+    }
+
+        .recent-recipe-container{
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 80%;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .top-element-decor{
+        width: 30%;
+    }
+
+    .dish-name-view-btn-container{
+        position: relative;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-left: auto;
+
     }
 
 
 }
 
-@media (min-width: 576px){
-    
-
-}
-
 @media (min-width: 768px){
+
+    .searchbar-container{
+       width: 85%;
+    }
+
+    .searchbar-input{
+        width: 90%;
+    }
+
+    .action-buttons-container{
+        margin-top: 50px;
+    }
+
+    
+    .recent-recipe-container{
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 80%;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .top-element-decor{
+        width: 30%;
+    }
+
+    .dish-name-view-btn-container{
+        position: relative;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-left: auto;
+
+    }
 
 }
 
@@ -60,6 +377,43 @@
         align-items: center;
 
     }
+
+    .searchbar-container{
+       width: 70%;
+    }
+
+    .searchbar-input{
+        width: 90%;
+    }
+
+    
+    .action-buttons-container{
+        margin-top: 60px;
+    }
+
+    .recent-recipe-container{
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 40%;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .top-element-decor{
+        width: 20%;
+    }
+
+    .dish-name-view-btn-container{
+        position: relative;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-left: auto;
+
+    }
+
+
 
 
 
